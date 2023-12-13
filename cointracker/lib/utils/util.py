@@ -10,10 +10,3 @@ def satoshis_to_bitcoin(satoshis: int):
     """
     bitcoin = satoshis / 100000000.0
     return bitcoin
-
-
-def json_dumper(obj):
-    try:
-        return obj.toJSON()
-    except:
-        return obj.__dict__
